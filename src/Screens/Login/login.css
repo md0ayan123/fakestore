@@ -1,0 +1,35 @@
+*{
+    /* background-color: rgb(38, 124, 223); */
+}
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.form-input{
+display: flex;
+flex-direction: column;
+
+}
+
+.login-card{
+    border: 2px solid rgb(101, 53, 53);
+    display: flex;
+    width: 700px;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-top: 60px; */
+}
+.username-input{
+    border:2px solid white;
+    border-radius: 12px;
+    width: 497px;
+}
+.password-input{
+    border:2px solid white;
+    border-radius: 12px;
+    width: 500px;
+}
