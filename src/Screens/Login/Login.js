@@ -12,7 +12,7 @@ const Login = () => {
           console.log(response.data);
              let token=response.data.token
              localStorage.setItem("token",token)
-        });
+        }); 
         navigate("/home");
   }
     
