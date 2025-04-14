@@ -24,12 +24,12 @@ const Login = () => {
         <form className='form-input ' onSubmit={handleSubmit}>
           <div className='mt-3'>
           <label className='p-2'>Username</label>
-          <input type="text" className='username-input' placeholder='username' />
+          <input type="text" className='username-input' placeholder='username' required />
           </div>
           
         <div className='mt-2'>
         <label className='p-2 '>Password</label>
-        <input type="password" className='password-input' placeholder='passworwd' />
+        <input type="password" className='password-input' placeholder='passworwd' required/>
         </div>
          <button className='btn btn-primary mt-3 ' type='submit'>Submit</button>
         </form>

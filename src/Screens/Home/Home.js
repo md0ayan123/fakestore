@@ -13,7 +13,7 @@ const Home = () => {
   const [products, setProducts] = useState([]);
 
   const[data,setData]=useState([])
-  const procduct=useCart()
+  // const procduct=useCart()
   
 const allProduct=async()=>{
   const response = await fetch('https://fakestoreapi.com/products')
@@ -64,7 +64,7 @@ useEffect(() => {
       <div className='page-box'>
        <div className='filter-section' style={{ padding: '20px' }}>
       <h4 className='mt-5' >Filter by Category</h4>
-      <select className='option-category'>-- value={selectedCat} onChange={(e) => setSelectedCat(e.target.value)}
+      <select className='option-category' value={selectedCat} onChange={(e) => setSelectedCat(e.target.value)}>
         <option>-selecte category-</option>
         {categories.map((cat) => (
           <option key={cat} value={cat}>
