@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <div >
       <ul className='nav-heading'>
-      <li className='flex-grow-1' style={{fontSize:'33px',fontWeight:"semibold"}}>FakeStore</li>
+      <li className='flex-grow-1' style={{fontSize:'33px',fontWeight:"semibold"}}>Alex Store</li>
       <div className='nav-cart'>
       <Link className='btn bg-white text-success mx-2  cart-btn ' to ="/cart">My Cart <span className=" badge rounded-pill bg-danger mx-1" >{data.length}</span></Link>
            <button className='btn bg-danger text-white mx-2  logout-btn' onClick={handleLogOut}>logout</button>

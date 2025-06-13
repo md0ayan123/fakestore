@@ -32,7 +32,7 @@ const Cart = () => {
     return (
       <div className='container'>
         {showConfirmation && (
-          <div className="confirmation-popup">
+          <div className="confirmation-popup ">
             Order placed successfully!
           </div>
         )}

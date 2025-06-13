@@ -19,17 +19,17 @@ const Login = () => {
     
   return (
     <div className='login-page'>
-  <div className='login-card p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3 '>
-        <h1 className='mb-5'>Login page</h1>
-        <form className='form-input ' onSubmit={handleSubmit}>
-          <div className='mt-3'>
-          <label className='p-2'>Username</label>
-          <input type="text" className='username-input' placeholder='username' required />
+        <h1 className='mb-5'>Login</h1>
+  <div className='login-card shadow card'>
+        <form className='form-input p-5' onSubmit={handleSubmit}>
+          <div className='input-box'>
+          <label className='form-label'>Username</label>
+          <input type="text" className='form-control' placeholder='username' required />
           </div>
           
-        <div className='mt-2'>
-        <label className='p-2 '>Password</label>
-        <input type="password" className='password-input' placeholder='passworwd' required/>
+        <div className='input-box'>
+        <label className='form-label'>Password</label>
+        <input type="password" className='form-control' placeholder='passworwd' required/>
         </div>
          <button className='btn btn-primary mt-3 ' type='submit'>Submit</button>
         </form>

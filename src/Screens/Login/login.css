@@ -1,6 +1,7 @@
 
 .login-page{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -11,18 +12,28 @@
 display: flex;
 width: auto;
 flex-direction: column;
-
+gap:10px
 }
 
 .login-card{
-    border: 2px solid rgb(101, 53, 53);
     display: flex;
-    width: 700px;
+    width: 500px;
     flex-direction: column;
     justify-content: center;
    
 }
-.username-input{
+.input-box{
+    display: flex;
+    flex-direction: column;
+    gap:5px;    
+}
+.inputs{
+    width: 100%;
+    padding:5px;
+    border-radius: 12px;
+      /* width: 300px; */
+}
+/* .username-input{
     border:2px solid white;
     border-radius: 12px;
     width: auto;
@@ -31,7 +42,7 @@ flex-direction: column;
     border:2px solid white;
     border-radius: 12px;
     width:auto;
-}
+} */
 @media screen and (max-width:555px){
     .login-card{
         width: auto;

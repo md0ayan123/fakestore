@@ -1,6 +1,7 @@
-import React from 'react'
 import './cardItems.css'
 import { useDispatchCart,useCart } from '../../Components/context/cart._context'
+ import { ToastContainer, toast } from 'react-toastify';
+
 
 const CardItems = (props) => {
 
@@ -8,11 +9,11 @@ const CardItems = (props) => {
   let dispatch=useDispatchCart();
   let data=useCart()
 
+
   
 const handleAddToCart=async()=>{
   await dispatch({type:"ADD",id:id,price:price,category:category,image:image,rating:rating,title:title,description:description})
-  console.log(data);
-
+  toast("Added to card!");
 }
 return (
   <div>
@@ -22,12 +23,13 @@ return (
         </div>
   
   <div class="card-body">
-    <h5 class="card-title font-bold">Price ${price}</h5>
-    <h5 class="card-title">{category}</h5>
-    <h5 class="card-title">{title.slice(1,20)}...</h5>
-    <p class="card-text">{description.slice(1,40)}...</p>
+    <h5 class="card-title">{title.slice(1,22)}...</h5>
+    <p class="card-text">{description.slice(1,30)}...</p>
     <p>Rating: ⭐ {rating.rate} ({rating.count} reviews)</p> 
-    <button class="btn btn-primary" onClick={()=>handleAddToCart()}>Add to Cart</button>
+    <div className='d-flex justify-content-between align-items-center'>
+    <span className='fw-bold'>${price}</span>
+    <button class="btn btn-info btn-sm" onClick={()=>handleAddToCart()}>Add to Cart</button>
+    </div>
   </div>
 </div>
     </div>
